@@ -11,4 +11,8 @@ class MarsViewModel(private val repository: MarsRepository) : ViewModel() {
     val marsProperties: LiveData<List<MarsProperty>>
         get() = _marsProperties
 
+    suspend fun getMarsProperties() {
+        val properties = repository.getMarsProperties()
+        _marsProperties.value = properties
+    }
 }
