@@ -16,4 +16,4 @@ abstract class SaveApiRequest {
     }
 }
 
-class ApiException(messsage: String) : IOException(messsage)
+class ApiException(message: String) : IOException(message)
