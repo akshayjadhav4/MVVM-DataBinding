@@ -17,6 +17,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -28,6 +29,10 @@ android {
     //to enable dataBinding
     dataBinding {
         enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -63,4 +68,6 @@ dependencies {
 
     // New Material Design
     implementation "com.google.android.material:material:1.1.0"
+
+    implementation 'com.android.support:multidex:1.0.3'
 }
