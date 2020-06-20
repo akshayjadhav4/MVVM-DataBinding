@@ -56,4 +56,8 @@ dependencies {
     //Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.0-rc01"
     implementation "androidx.navigation:navigation-ui-ktx:2.3.0-rc01"
+
+    //Kodein dependency injection
+    implementation "org.kodein.di:kodein-di-generic-jvm:6.4.0"
+    implementation "org.kodein.di:kodein-di-framework-android-x:6.4.0"
 }
