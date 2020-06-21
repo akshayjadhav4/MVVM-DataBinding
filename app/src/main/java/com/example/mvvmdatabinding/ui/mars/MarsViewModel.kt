@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding.ui
+package com.example.mvvmdatabinding.ui.mars
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding.ui
+package com.example.mvvmdatabinding.ui.mars
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

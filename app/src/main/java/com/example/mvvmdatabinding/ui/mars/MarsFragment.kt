@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding.ui
+package com.example.mvvmdatabinding.ui.mars
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -39,7 +39,8 @@ class MarsFragment : Fragment() {
             recycler_view_mars.also {
                 it.layoutManager = LinearLayoutManager(requireContext())
                 it.setHasFixedSize(true)
-                it.adapter = MarsAdapter(marsProperties = properties)
+                it.adapter =
+                    MarsAdapter(marsProperties = properties)
             }
         })
     }

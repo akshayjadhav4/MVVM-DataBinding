@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding.ui
+package com.example.mvvmdatabinding.ui.mars
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
