@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/marsFragment"
-        android:name="com.example.mvvmdatabinding.MarsFragment"
+        android:name="com.example.mvvmdatabinding.ui.MarsFragment"
         android:label="mars_fragment"
         tools:layout="@layout/mars_fragment" />
 </navigation>

@@ -1,11 +1,8 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import com.example.mvvmdatabinding.R
 
 class MainActivity : AppCompatActivity() {
 

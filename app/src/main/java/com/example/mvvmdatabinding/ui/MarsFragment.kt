@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mvvmdatabinding.R
 import com.example.mvvmdatabinding.data.network.MarsApi
 import com.example.mvvmdatabinding.data.repository.MarsRepository
 import kotlinx.android.synthetic.main.mars_fragment.*
