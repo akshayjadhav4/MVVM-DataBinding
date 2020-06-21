@@ -2,6 +2,7 @@ package com.example.mvvmdatabinding
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.mvvmdatabinding.data.repository.MarsRepository
 
 @Suppress("UNCHECKED_CAST")
 class MarsViewModelFactory(private val repository: MarsRepository) :

@@ -1,4 +1,6 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.data.repository
+
+import com.example.mvvmdatabinding.data.network.MarsApi
 
 class MarsRepository(private val api: MarsApi) : SaveApiRequest() {
 

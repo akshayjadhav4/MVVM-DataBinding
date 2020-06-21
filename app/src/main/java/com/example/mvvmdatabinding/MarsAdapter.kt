@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mvvmdatabinding.data.models.MarsProperty
 import com.example.mvvmdatabinding.databinding.RecyclerviewMarsBinding
 
 class MarsAdapter(

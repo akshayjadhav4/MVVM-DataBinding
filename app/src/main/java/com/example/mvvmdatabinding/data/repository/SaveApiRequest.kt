@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.data.repository
 
 import retrofit2.Response
 import java.io.IOException

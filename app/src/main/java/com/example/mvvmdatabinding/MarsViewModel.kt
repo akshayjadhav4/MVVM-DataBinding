@@ -3,8 +3,9 @@ package com.example.mvvmdatabinding
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.mvvmdatabinding.data.models.MarsProperty
+import com.example.mvvmdatabinding.data.repository.MarsRepository
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
 
 class MarsViewModel(private val repository: MarsRepository) : ViewModel() {
 

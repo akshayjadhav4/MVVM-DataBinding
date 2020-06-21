@@ -1,5 +1,6 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.data.network
 
+import com.example.mvvmdatabinding.data.models.MarsProperty
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
