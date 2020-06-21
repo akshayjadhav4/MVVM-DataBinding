@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MVVM DataBinding</string>
+    <string name="price">$%,.0f</string>
+    <string name="type">For %s</string>
 </resources>
