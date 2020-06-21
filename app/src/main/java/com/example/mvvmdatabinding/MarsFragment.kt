@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.mars_fragment.*
 
 
 class MarsFragment : Fragment() {
@@ -28,5 +31,13 @@ class MarsFragment : Fragment() {
         factory = MarsViewModelFactory(repository)
 
         viewModel = ViewModelProvider(this, factory).get(MarsViewModel::class.java)
+        viewModel.getMarsProperties()
+        viewModel.marsProperties.observe(viewLifecycleOwner, Observer { properties ->
+            recycler_view_mars.also {
+                it.layoutManager = LinearLayoutManager(requireContext())
+                it.setHasFixedSize(true)
+                it.adapter = MarsAdapter(marsProperties = properties)
+            }
+        })
     }
 }
