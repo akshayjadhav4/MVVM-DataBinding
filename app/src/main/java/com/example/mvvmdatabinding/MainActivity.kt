@@ -13,10 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val repository = MarsRepository(MarsApi())
-        GlobalScope.launch(Dispatchers.Main) {
-            val properties = repository.getMarsProperties()
-            Toast.makeText(this@MainActivity, properties.toString(), Toast.LENGTH_LONG).show()
-        }
+
     }
 }
