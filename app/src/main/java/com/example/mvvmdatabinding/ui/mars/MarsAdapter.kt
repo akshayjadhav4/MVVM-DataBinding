@@ -10,7 +10,8 @@ import com.example.mvvmdatabinding.data.models.MarsProperty
 import com.example.mvvmdatabinding.databinding.RecyclerviewMarsBinding
 
 class MarsAdapter(
-    private val marsProperties: List<MarsProperty>
+    private val marsProperties: List<MarsProperty>,
+    private val listener: RecyclerViewCLickListener
 ) : RecyclerView.Adapter<MarsAdapter.MarsViewHolder>() {
 
     override fun getItemCount() = marsProperties.size
