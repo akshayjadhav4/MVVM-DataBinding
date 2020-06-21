@@ -1,7 +1,6 @@
 package com.example.mvvmdatabinding.ui.mars
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -30,10 +29,17 @@ class MarsAdapter(
 
         //clickListener
         //This approach is for all card
-        holder.recyclerviewMarsBinding.root.setOnClickListener { }
+        holder.recyclerviewMarsBinding.root.setOnClickListener {
+            listener.onTypeClicked(holder.recyclerviewMarsBinding.root, marsProperties[position])
+        }
 
         //For specific element
-        holder.recyclerviewMarsBinding.marsType.setOnClickListener {}
+        holder.recyclerviewMarsBinding.marsType.setOnClickListener {
+            listener.onTypeClicked(
+                holder.recyclerviewMarsBinding.marsType,
+                marsProperties[position]
+            )
+        }
     }
 
     inner class MarsViewHolder(val recyclerviewMarsBinding: RecyclerviewMarsBinding) :
