@@ -3,7 +3,7 @@ package com.example.mvvmdatabinding.ui
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.mvvmdatabinding.Coroutines
+import com.example.mvvmdatabinding.util.Coroutines
 import com.example.mvvmdatabinding.data.models.MarsProperty
 import com.example.mvvmdatabinding.data.repository.MarsRepository
 import kotlinx.coroutines.Job

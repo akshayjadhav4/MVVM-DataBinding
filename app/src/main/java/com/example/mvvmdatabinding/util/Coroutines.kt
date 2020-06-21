@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.util
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

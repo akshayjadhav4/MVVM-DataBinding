@@ -1,4 +1,4 @@
-package com.example.mvvmdatabinding
+package com.example.mvvmdatabinding.util
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
